@@ -13,8 +13,9 @@ import java.util.Optional;
 @CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
 
-    @Autowired
-    private UserRepository userRepository;
+
+    UserRepository userRepository;
+
 
     @PostMapping("/login")
     public ResponseEntity<User> loginUser(@RequestBody User userData) {
